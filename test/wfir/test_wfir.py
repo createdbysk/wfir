@@ -24,3 +24,8 @@ def test_sql_query(mocker, mock_create_task):
     # THEN
     mock_create_task.assert_called_with(type="sql_query", file_path=sql_query_file_path, compute=compute)
     assert expected_result == actual_result
+
+
+def test_input():
+    # GIVEN
+    pass
