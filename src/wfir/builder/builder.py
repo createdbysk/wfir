@@ -1,4 +1,4 @@
-import wfir.builder.helper as helper
+import wfir.builder.factory as factory
 
 
 class Constants(object):
@@ -6,7 +6,7 @@ class Constants(object):
 
 
 def sql_query(file_path, **kwargs):
-    task = helper.create_task(type=Constants.SQL_QUERY_TASK_TYPE,
+    task = factory.create_task(type=Constants.SQL_QUERY_TASK_TYPE,
                               file_path=file_path,
                               **kwargs)
     return task

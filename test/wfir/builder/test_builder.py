@@ -4,7 +4,7 @@ from wfir import builder
 
 @pytest.fixture()
 def mock_create_task(mocker):
-    yield mocker.patch("wfir.builder.helper.create_task", auto_spec=True)
+    yield mocker.patch("wfir.builder.factory.create_task", auto_spec=True)
 
 
 def test_sql_query(mocker, mock_create_task):
