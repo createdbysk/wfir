@@ -1,2 +1,2 @@
 # wfir
-Work -
+wfir stands for Work-flow intermediate representation.
